@@ -48,7 +48,7 @@ with tab1:
     st.markdown('<div class="title"><h1>your own pokedex</h1></div>', unsafe_allow_html=True)
 @st.cache_resource
 def load_model():
-    model = YOLO(r"C:\Users\Arhaan Sharma\runs\classify\train6\weights\best.pt")
+    model = YOLO("best.pt")
     return model
 
 # Add some spacing at the top of the site
