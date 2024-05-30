@@ -3,7 +3,7 @@ from ultralytics import YOLO
 from PIL import Image
 st.set_page_config(layout= "wide")
 
-tab1, tab2, tab3 = st.tabs(["Pokedex", "about", "my ai"])
+tab1, tab2, tab3 = st.tabs(["Pokedex", "About-YOLO", "Why?"])
 col1, col2, col3 = st.columns([1, 2, 3])
 with tab1:
     
@@ -88,5 +88,5 @@ with tab2:
 
 with tab3:
     st.markdown("""
-                <h1 style= "color:#299CD6 ;">hello</h1>
+                <h1 style= "color:#299CD6 ;">As a child, the allure of Pokémon captivated many of us, inspiring dreams of adventure, camaraderie, and the quest to "catch 'em all." Among the many treasures within the Pokémon universe, the Pokédex stood out as an emblem of knowledge and exploration, serving as a vital companion on the journey to becoming a Pokémon Master. For those of us who grew up watching Pokémon, the desire for a real-life Pokédex was not merely a whimsical fantasy but a heartfelt yearning rooted in our deep connection to the franchise and its world.</h1>
                 """, unsafe_allow_html=True)
