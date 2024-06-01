@@ -36,7 +36,7 @@ with tab1:
               
         </style>
         <div class="positioned-image">
-            <img src="https://media.discordapp.net/attachments/1093112144515579965/1245706197949218860/International_Pokemon_logo.svg.png?ex=6659b9cd&is=6658684d&hm=663bc803ae75b8d5bc22442a1c0943c5d73937851292f3d5b3a9e022c1093806&=&format=webp&quality=lossless&width=2560&height=942" width="869">
+            <img src="International_Pokémon_logo.svg" width="869">
         </div>
         <div class="pokemon1">
             <img src="" width="869">
