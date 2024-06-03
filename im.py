@@ -89,10 +89,11 @@ with tab2:
                 <div class="body"><h1 style= "color:#299CD6;">YOLO (You Only Look Once) is a popular object detection algorithm that can detect multiple objects in an image and precisely localize them. It's widely used in various applications such as self-driving cars, security systems, and more</h1></div>
 
                 """, unsafe_allow_html=True)
+    st.image("yolo.png")
 
 
 
 with tab3:
     st.markdown("""
-                <h1 style= "color:#299CD6 ;">As a child, the allure of Pokémon captivated many of us, inspiring dreams of adventure, camaraderie, and the quest to "catch 'em all." Among the many treasures within the Pokémon universe, the Pokédex stood out as an emblem of knowledge and exploration, serving as a vital companion on the journey to becoming a Pokémon Master. For those of us who grew up watching Pokémon, the desire for a real-life Pokédex was not merely a whimsical fantasy but a heartfelt yearning rooted in our deep connection to the franchise and its world.</h1>
+              <div class="body">  <h1 style= "color:#299CD6 ;">As a child, the allure of Pokémon captivated many of us, inspiring dreams of adventure, camaraderie, and the quest to "catch 'em all." Among the many treasures within the Pokémon universe, the Pokédex stood out as an emblem of knowledge and exploration, serving as a vital companion on the journey to becoming a Pokémon Master. For those of us who grew up watching Pokémon, the desire for a real-life Pokédex was not merely a whimsical fantasy but a heartfelt yearning rooted in our deep connection to the franchise and its world.</h1></div>
                 """, unsafe_allow_html=True)
