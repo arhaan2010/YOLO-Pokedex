@@ -86,7 +86,7 @@ if img is not None:
 
 with tab2:
     st.markdown("""
-                <div class="body"><h1 style= "color:#299CD6;">YOLO (You Only Look Once) is a popular object detection algorithm that can detect multiple objects in an image and precisely localize them. It's widely used in various applications such as self-driving cars, security systems, and more.<be>
+                <div class="body"><h1 style= "color:#299CD6;">YOLO (You Only Look Once) is a popular object detection algorithm that can detect multiple objects in an image and precisely localize them. It's widely used in various applications such as self-driving cars, security systems, and more.<br>
                 1. Image Input
                 The input to the YOLO algorithm is an image. The algorithm processes the entire image at once, unlike other object detection methods that scan parts of the image multiple times at different scales.
                 <br>
