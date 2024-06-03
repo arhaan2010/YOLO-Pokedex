@@ -36,7 +36,7 @@ with tab1:
             }
             .body h1 {
                     color: #DF9D20;
-                    font-family: "Major Mono Display", monospace;
+                    font-family: "Teko",sans-serif;
                     font-style: normal;
                     }
               
