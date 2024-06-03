@@ -86,7 +86,42 @@ if img is not None:
 
 with tab2:
     st.markdown("""
-                <div class="body"><h1 style= "color:#299CD6;">YOLO (You Only Look Once) is a popular object detection algorithm that can detect multiple objects in an image and precisely localize them. It's widely used in various applications such as self-driving cars, security systems, and more</h1></div>
+                <div class="body"><h1 style= "color:#299CD6;">YOLO (You Only Look Once) is a popular object detection algorithm that can detect multiple objects in an image and precisely localize them. It's widely used in various applications such as self-driving cars, security systems, and more.<be>
+                1. Image Input
+                The input to the YOLO algorithm is an image. The algorithm processes the entire image at once, unlike other object detection methods that scan parts of the image multiple times at different scales.
+                <br>
+                2. Grid Division
+                The image is divided into an 
+                S×S grid of cells. Each cell is responsible for detecting objects whose center falls within it. This grid-based approach helps in localizing objects in the image.
+                <br>
+                3. Bounding Box Prediction
+                Each cell predicts a fixed number of bounding boxes (usually denoted by 
+                B, e.g., 2 or 3 boxes). For each bounding box, the following attributes are predicted:
+                x and y coordinates of the box center relative to the bounds of the grid cell
+                Width and height of the box (relative to the entire image)
+                Confidence score for the box (how likely it is that the box contains an object and how accurate the bounding box is)
+                   <br>
+                4. Class Prediction
+                Each cell also predicts class probabilities for the object within the bounding box. This is a set of probabilities over all the classes, indicating what kind of object (e.g., car, person, dog) is in the box.
+                <br>
+                5. Confidence Score Calculation
+                The confidence score for each predicted bounding box is calculated as:
+                Confidence
+               <br>
+                6. Prediction Consolidation
+                The model outputs a large number of bounding boxes, most of which may overlap significantly or may not contain objects at all. YOLO uses non-max suppression to eliminate redundant boxes. This step involves:
+                <br>
+                Discarding boxes with low confidence scores.
+                Selecting the box with the highest confidence score and suppressing all other boxes that overlap significantly with it.
+                7. Final Output
+                The final output is a list of bounding boxes with their associated class labels and confidence scores, providing the locations and types of objects detected in the image.
+                <br>
+                Summary
+                YOLO's approach can be summarized as:
+                
+                Single-pass detection: Unlike other methods that use region proposals and apply the classifier to each region, YOLO performs detection in a single forward pass of the network.
+                Grid-based detection: The image is divided into a grid, and predictions are made on a per-cell basis.
+                Unified architecture: YOLO is a single convolutional network that simultaneously predicts multiple bounding boxes and class probabilities for those boxes.</h1></div>
 
                 """, unsafe_allow_html=True)
     st.image("yolo.png")
