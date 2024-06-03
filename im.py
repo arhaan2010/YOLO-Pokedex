@@ -34,7 +34,7 @@ with tab1:
                 top: 0%; /* Change top value for vertical position */
                 left: 15%; /* Change left value for horizontal position */
             }
-            .body{
+            .body h1 {
                     color: #DF9D20;
                     font-family: "Major Mono Display", monospace;
                     font-style: normal;
