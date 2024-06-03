@@ -10,6 +10,7 @@ with tab1:
     st.markdown("""
                 <style>
                         @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"');
+                        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet');
                     .stApp {
                          background-color:#F0E600;
                          background-size: cover;
@@ -33,6 +34,11 @@ with tab1:
                 top: 0%; /* Change top value for vertical position */
                 left: 15%; /* Change left value for horizontal position */
             }
+            .body{
+                    color: #DF9D20;
+                    font-family: "Major Mono Display", monospace;
+                    font-style: normal;
+                    }
               
         </style>
         <div class="positioned-image">
@@ -80,7 +86,7 @@ if img is not None:
 
 with tab2:
     st.markdown("""
-                <h1 style= "color:#299CD6;">YOLO (You Only Look Once) is a popular object detection algorithm that can detect multiple objects in an image and precisely localize them. It's widely used in various applications such as self-driving cars, security systems, and more</h1>
+                <div class="body"><h1 style= "color:#299CD6;">YOLO (You Only Look Once) is a popular object detection algorithm that can detect multiple objects in an image and precisely localize them. It's widely used in various applications such as self-driving cars, security systems, and more</h1></div>
 
                 """, unsafe_allow_html=True)
 
